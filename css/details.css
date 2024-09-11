@@ -1,3 +1,4 @@
+@import url(styles.css);
 .category-container {
   display: flex;
 }
@@ -5,12 +6,12 @@
 .category {
   padding: 0 20px;
   margin-right: 20px;
-  background-color: #636363;
+  background-color: var(--ctech-color-bg-tertiary);
   border-radius: 4px;
   height: 30px;
   font-size: 12px;
   font-weight: 700;
-  color: #fff;
+  color: var(--ctech-color-card-bg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,15 +31,15 @@
 }
 
 .product-details-bottom h3 {
-  color: #0caf1d;
+  color: var(--ctech-color-font-secondary);
   font-size: 20px;
 }
 .product-details-bottom h4 {
-  color: #636363;
+  color: var(--ctech-color-font-primary);
   font-size: 12px;
 }
 .product-details-bottom p {
-  color: #636363;
+  color: var(--ctech-color-font-primary);
   font-size: 12px;
   margin: 10px 0;
 }

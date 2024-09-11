@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
+:root {
+  /*Variaveis CSS - Nome da loja: ctech - bg: background - btn: buttom */
+  --ctech-color-bg-primary: #e8e8e8;
+  --ctech-color-bg-secondary: #ffe500;
+  --ctech-color-bg-tertiary: #636363;
+
+  --ctech-color-card-bg: #fff;
+  --ctech-color-card-border: #d9d9d9;
+
+  --ctech-color-btn-primary: #3483fa;
+  --ctech-color-btn-inverse: #fff;
+
+  --ctech-color-font-primary: #636363;
+  --ctech-color-font-secondary: #0caf1d;
+  --ctech-color-font-tertiary: #fff;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,19 +32,19 @@ a:hover {
 
 html,
 body {
-  /* background-color: #e8e8e8; */
+  /* background-color: var(--ctech-color-bg-primary); */
   background-color: darkslategrey;
 }
 
 header {
-  background-color: #ffe500;
+  background-color: var(--ctech-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
 }
 
 nav {
-  color: #636363;
+  color: var(--ctech-color-font-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,13 +57,13 @@ nav {
 }
 
 .card {
-  border: 1px solid #d9d9d9;
-  background-color: white;
+  border: 1px solid var(--ctech-color-card-border);
+  background-color: var(--ctech-color-card-bg);
   border-radius: 4px;
 }
 
 .line-bootom {
-  border-bottom: 2px #d9d9d9;
+  border-bottom: 2px var(--ctech-color-card-border);
 }
 
 .btn-page-container {
@@ -63,13 +80,13 @@ nav {
   align-items: center;
 }
 .btn-blue {
-  background-color: #3483fa;
-  color: #fff;
+  background-color: var(--ctech-color-btn-primary);
+  color: var(--ctech-color-btn-inverse);
 }
 .btn-white {
-  background-color: #fff;
-  color: #3483fa;
-  border-radius: 1px solid #3483fa;
+  background-color: var(--ctech-color-btn-inverse);
+  color: var(--ctech-color-btn-primary);
+  border-radius: 1px solid var(--ctech-color-btn-primary);
 }
 
 /*Margin do Container*/
