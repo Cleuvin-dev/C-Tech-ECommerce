@@ -50,6 +50,9 @@ main {
 .ctech-mb20 {
   margin-bottom: 20px;
 }
+.ctech-mt20 {
+  margin-top: 20px;
+}
 
 /* ================================================================ */
 /*Header Styles*/
@@ -118,4 +121,15 @@ nav a {
   background-color: var(--ctech-color-btn-inverse);
   color: var(--ctech-color-btn-primary);
   border-radius: 1px solid var(--ctech-color-btn-primary);
+}
+.ctech-btn-next-page {
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--ctech-color-btn-primary);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 1px solid var(--ctech-color-btn-primary);
+  background-color: var(--ctech-color-btn-inverse);
 }
