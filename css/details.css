@@ -1,9 +1,14 @@
 @import url(styles.css);
-.category-container {
+
+#product-details-section {
+  padding: 20px 0;
+}
+
+.ctech-category-container {
   display: flex;
 }
 
-.category {
+.ctech-category {
   padding: 0 20px;
   margin-right: 20px;
   background-color: var(--ctech-color-bg-tertiary);
@@ -17,32 +22,29 @@
   align-items: center;
 }
 
-.product-details-top {
+.ctech-product-details-top {
   padding: 10px;
   display: flex;
   justify-content: center;
 }
-.product-details-top img {
+.ctech-product-details-top img {
   width: 220px;
 }
 
-.product-details-bottom {
+.ctech-product-details-bottom {
   padding: 10px 20px 20px 20px;
 }
 
-.product-details-bottom h3 {
+.ctech-product-details-bottom h3 {
   color: var(--ctech-color-font-secondary);
   font-size: 20px;
 }
-.product-details-bottom h4 {
+.ctech-product-details-bottom h4 {
   color: var(--ctech-color-font-primary);
   font-size: 12px;
 }
-.product-details-bottom p {
+.ctech-product-details-bottom p {
   color: var(--ctech-color-font-primary);
   font-size: 12px;
   margin: 10px 0;
-}
-#product-details {
-  padding: 20px 0;
 }

@@ -35,6 +35,20 @@ body {
   /* background-color: var(--ctech-color-bg-primary); */
   background-color: darkslategrey;
 }
+/* ================================================================ */
+/* Generic/Gloabl Styles */
+.ctech-container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.ctech-mb20 {
+  margin-bottom: 20px;
+}
+
+/* ================================================================ */
+/*Header Styles*/
 
 header {
   background-color: var(--ctech-color-bg-secondary);
@@ -49,28 +63,35 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
-.container {
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+nav a {
+  font-size: 14px;
+  font-weight: 700;
 }
 
-.card {
+/* ================================================================ */
+/*Card Styles*/
+
+.ctech-card {
   border: 1px solid var(--ctech-color-card-border);
   background-color: var(--ctech-color-card-bg);
   border-radius: 4px;
 }
 
-.line-bootom {
+.ctech-line-bootom {
   border-bottom: 2px var(--ctech-color-card-border);
 }
 
-.btn-page-container {
+/* ================================================================ */
+/*Button Styles*/
+.ctech-btn-page-container {
   width: 220px;
 }
 
-.btn {
+.ctech-btn {
   border-radius: 4px;
   height: 42px;
   font-size: 16px;
@@ -79,17 +100,12 @@ nav {
   justify-content: center;
   align-items: center;
 }
-.btn-blue {
+.ctech-btn-blue {
   background-color: var(--ctech-color-btn-primary);
   color: var(--ctech-color-btn-inverse);
 }
-.btn-white {
+.ctech-btn-white {
   background-color: var(--ctech-color-btn-inverse);
   color: var(--ctech-color-btn-primary);
   border-radius: 1px solid var(--ctech-color-btn-primary);
-}
-
-/*Margin do Container*/
-.mb20 {
-  margin-bottom: 20px;
 }
