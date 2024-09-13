@@ -82,6 +82,12 @@ nav a {
   font-size: 14px;
   font-weight: 700;
 }
+.ctech-logged-user p {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 /* ================================================================ */
 /*                   Card Styles                                    */
