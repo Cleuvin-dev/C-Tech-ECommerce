@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C-Tech ECommerce</title>
+    <link rel="stylesheet" href="./css/product-form.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Parte superior do site -->
+      <nav class="ctech-container">
+        <h1>C-Tech ECommerce</h1>
+        <div class="ctech-logged-user">
+          <p>Cleuvin Santos</p>
+          <a href="#">Sair</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Seção onde contem os produtos no carrinho, selecionados para compra -->
+      <section id="product-form-section" class="ctech-container">
+        <div class="ctech-product-form-container">
+          <form class="ctech-card ctech-form">
+            <h2>Dados do produto</h2>
+            <div class="ctech-product-form-container">
+              <div>
+                <input
+                  class="ctech-form-control"
+                  type="text"
+                  placeholder="Nome"
+                />
+              </div>
+              <div>
+                <input
+                  class="ctech-form-control"
+                  type="text"
+                  placeholder="Preço"
+                />
+              </div>
+              <div>
+                <input
+                  class="ctech-form-control"
+                  type="text"
+                  placeholder="Imagem"
+                />
+              </div>
+              <div>
+                <select class="ctech-form-control ctech-select" required>
+                  <option value="" disabled selected>Categorias</option>
+                  <option value="">Valor 1</option>
+                  <option value="">Valor 2</option>
+                </select>
+              </div>
+              <div>
+                <textarea
+                  class="ctech-form-control ctech-textarea"
+                  placeholder="Descrição"
+                ></textarea>
+              </div>
+            </div>
+            <div class="ctech-product-form-buttons">
+              <button type="reset" class="ctech-btn ctech-btn-white">
+                Cancelar
+              </button>
+              <button type="submit" class="ctech-btn ctech-btn-blue">
+                Salvar
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

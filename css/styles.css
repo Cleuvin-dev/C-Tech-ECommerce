@@ -231,3 +231,20 @@ nav a {
   font-size: 12px;
   padding-left: 4px;
 }
+
+/* ============================================================================ */
+/*                            Product-fomr Styles                               */
+.ctech-select:invalid {
+  color: var(--ctech-color-font-placeholder);
+}
+.ctech-select option[disabled] {
+  display: none;
+}
+.ctech-select option {
+  color: var(--ctech-color-font-primary);
+}
+.ctech-textarea {
+  resize: none; /* Desabilita a expansão do textarea*/
+  height: 128px;
+  padding-top: 10px;
+}
