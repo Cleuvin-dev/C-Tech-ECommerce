@@ -56,6 +56,21 @@ main {
 .ctech-mt20 {
   margin-top: 20px;
 }
+.ctech-section-title {
+  text-align: center;
+  color: var(--ctech-color-font-primary);
+  font-size: 16px;
+}
+.ctech-txt-left {
+  text-align: left;
+}
+
+@media (min-width: 576px) {
+  .ctech-section-title {
+    text-align: left;
+    font-size: 24px;
+  }
+}
 
 /* ================================================================ */
 /*                      Header Styles                               */
@@ -233,7 +248,7 @@ nav a {
 }
 
 /* ============================================================================ */
-/*                            Product-fomr Styles                               */
+/*                            Product-form Styles                               */
 .ctech-select:invalid {
   color: var(--ctech-color-font-placeholder);
 }
@@ -247,4 +262,107 @@ nav a {
   resize: none; /* Desabilita a expansão do textarea*/
   height: 128px;
   padding-top: 10px;
+}
+
+/* ============================================================================ */
+/*                             Table Styles                                     */
+
+.ctech-table {
+  width: 100%;
+  border-spacing: 0; /* Remove a bordar na tabela */
+  border-collapse: collapse; /* Faz aparecer a linda da tabela */
+}
+
+.ctech-table thead {
+  height: 55px;
+  font-size: 14px;
+  background-color: var(--ctech-color-card-bg);
+  color: var(--ctech-color-font-primary);
+}
+.ctech-table tbody {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: var(--ctech-color-card-bg);
+  color: var(--ctech-color-font-primary);
+}
+
+.ctech-table tbody tr {
+  height: 70px;
+  border-top: 1px solid var(--ctech-color-card-border);
+}
+
+.ctech-table td:nth-child(2) {
+  /* Este comando seleciona a opção td mas fixando no segundo td da lista*/
+  padding-left: 10px;
+}
+
+.ctech-table th:nth-child(2) {
+  /* Este comando seleciona a opção th mas fixando no segundo th da lista, adicionando uma borda*/
+  border-top-left-radius: 10px;
+}
+
+.ctech-table th:last-child {
+  /* Este comando seleciona o ultimo th da lista, adicionando uma borda*/
+  border-top-right-radius: 10px;
+}
+
+.ctech-table td:last-child {
+  /* Este comando seleciona a opção td mas fixando no ultimo td da lista*/
+  padding-right: 5px;
+}
+
+.ctech-tb576 {
+  /* Não irá permiti a visualização do ID e do Nome quando for Mobile*/
+  display: none;
+}
+.ctech-tb768 {
+  display: none;
+}
+
+/*                             Media Mobile                                */
+@media (min-width: 576px) {
+  .ctech-tb576 {
+    /* Não irá permiti a visualização do ID e do Nome quando for Mobile*/
+    display: table-cell;
+  }
+
+  .ctech-table th:nth-child(1) {
+    /* Este comando seleciona a opção td mas fixando no primeiro th da lista*/
+    padding-left: 10px;
+  }
+
+  .ctech-table td:nth-child(1) {
+    /* Este comando seleciona a opção td mas fixando no primeiro td da lista*/
+    padding-left: 20px;
+  }
+
+  .ctech-table td:nth-child(2) {
+    /* Este comando seleciona a opção td mas fixando no segundo td da lista*/
+    padding-left: 0px;
+  }
+
+  .ctech-table th:nth-child(2) {
+    /* Este comando seleciona a opção th mas fixando no segundo th da lista, adicionando uma borda*/
+    border-top-left-radius: 0px;
+  }
+
+  .ctech-table th:last-child {
+    /* Este comando seleciona o ultimo th da lista, adicionando uma borda*/
+    border-top-right-radius: 0px;
+  }
+}
+
+/*                          Media tablet                               */
+@media (min-width: 768px) {
+  .ctech-tb768 {
+    /* Não irá permiti a visualização do ID e do Nome quando for Mobile*/
+    display: table-cell;
+  }
+}
+
+@media (min-width: 992px) {
+  .ctech-table tbody {
+    font-size: 16px;
+  }
 }
