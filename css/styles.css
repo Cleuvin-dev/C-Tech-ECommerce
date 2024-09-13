@@ -15,6 +15,7 @@
   --ctech-color-font-primary: #636363;
   --ctech-color-font-secondary: #0caf1d;
   --ctech-color-font-tertiary: #fff;
+  --ctech-color-font-placeholder: #d9d9d9d9;
 }
 
 * {
@@ -132,4 +133,46 @@ nav a {
   cursor: pointer;
   border-radius: 1px solid var(--ctech-color-btn-primary);
   background-color: var(--ctech-color-btn-inverse);
+}
+
+/* ============================================================================ */
+/* Search Bar Styles*/
+.ctech-search-bar {
+  height: 40px;
+  display: flex;
+  color: var(--ctech-color-font-primary);
+}
+.ctech-search-bar button,
+.ctech-search-bar input {
+  border: var(--ctech-color-card-border #d9d9d9);
+}
+.ctech-search-bar input {
+  width: calc(
+    100% - 80px
+  ); /* calculo para ajuste da Search Bar de seu espaço de 100% - 80 pixels para ajuste dos incones */
+  border-left: none;
+  border-right: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: var(--ctech-color-font-primary);
+}
+.ctech-search-bar input:focus {
+  outline: none; /* Comando para remoção das bordas da barra de Search ao ser selecionada */
+}
+.ctech-search-bar input::placeholder {
+  color: var(--ctech-color-font-placeholder);
+}
+.ctech-search-bar button {
+  width: 40px;
+  color: var(--ctech-color-font-primary);
+}
+/*Remoção da borda direta do botão de Search da barra*/
+.ctech-search-bar button[type="submit"] {
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+/*Remoção da borda esquerda do botão de cancelar X, da barra*/
+.ctech-search-bar button[type="reset"] {
+  border-left: none;
+  border-radius: 0 8px 8px 0;
 }
