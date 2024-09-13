@@ -1,0 +1,23 @@
+@import url(styles.css);
+
+#login-section {
+  padding: 20px 0;
+}
+.ctech-login-form-container {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.ctech-login-form-buttons {
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  #login-section {
+    padding: 40px 0;
+  }
+  .ctech-form h2 {
+    font-size: 24px;
+  }
+}
