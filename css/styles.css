@@ -5,6 +5,7 @@
   --ctech-color-bg-primary: #e8e8e8;
   --ctech-color-bg-secondary: #ffe500;
   --ctech-color-bg-tertiary: #636363;
+  --ctech-color-bg-quaternary: #0caf1d;
 
   --ctech-color-card-bg: #fff;
   --ctech-color-card-border: #d9d9d9;
@@ -76,34 +77,75 @@ main {
 /*                      Header Styles                               */
 
 header {
-  background-color: var(--ctech-color-bg-secondary);
   height: 70px;
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
 
-nav {
+.ctech-header-client {
+  background-color: var(--ctech-color-bg-secondary);
   color: var(--ctech-color-font-primary);
+}
+.ctech-header-admin {
+  background-color: var(--ctech-color-bg-quaternary);
+  color: var(--ctech-color-font-tertiary);
+}
+
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 nav h1 {
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 700;
 }
 nav a {
   font-size: 14px;
   font-weight: 700;
 }
+.ctech-navbar-rigth {
+  display: flex;
+  align-items: center;
+}
+.ctech-menu-items-container {
+  display: flex;
+}
+.ctech-menu-items-container img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.ctech-menu-item {
+  margin-right: 20px;
+  display: flex;
+}
+
+.ctech-menu-item p {
+  display: none;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.ctech-menu-item-active {
+  font-weight: 700;
+}
+
 .ctech-logged-user p {
   font-size: 12px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
+@media (min-width: 576px) {
+  nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  .ctech-menu-item p {
+    display: unset;
+  }
+}
 /* ================================================================ */
 /*                   Card Styles                                    */
 
